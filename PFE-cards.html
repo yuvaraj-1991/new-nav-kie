@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/@patternfly/pfelement/dist/pfelement.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/@patternfly/pfe-styles/dist/pfe-layouts.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;700&family=Red+Hat+Text&display=swap" rel="stylesheet">
+  <style>
+    html,
+    body {
+      margin: 0;
+      font-family: "Red Hat Text";
+    }
+
+    h1, h2, h3, h4 {
+      font-family: "Red Hat Display";
+    }
+  </style> 
+    <title>PFE-cards</title>
+</head>
+<body>
+    <pfe-card>
+        <h2 slot="pfe-card--header">Card header</h2>
+        <p>This is the pfe-card body.</p>
+        <div slot="pfe-card--footer">
+          <p>This is the footer</p>
+        </div>
+      </pfe-card>
+
+      <script src="app.js"></script>
+</body>
+</html>
