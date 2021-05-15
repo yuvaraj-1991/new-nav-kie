@@ -541,7 +541,7 @@ button:focus {
     -webkit-transition: all .4s ease;
     transition: all .4s ease; }
   #services .services-item .icon {
-    background: #e3fff2;
+    background: #e3fff2;    
     width: 110px;
     height: 110px;
     margin: 0px auto;

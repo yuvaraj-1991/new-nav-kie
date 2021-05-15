@@ -39,8 +39,11 @@
         import "https://unpkg.com/@patternfly/pfe-navigation/dist/pfe-navigation.min.js"
     </script>
 </head>
+<div class="banner">
+  <h3>What is trending!! Latest News on events</h3>
+</div>
 <body>
-    <pfe-navigation pfe-menu-label="Menu" pfe-theme="dark">        
+    <pfe-navigation pfe-menu-label="Menu" pfe-theme="dark" class="sticky">        
         <div slot="skip">
           <ul>
             <li><a href="#rh-main-content">Skip to content</a></li>
@@ -67,54 +70,7 @@
           <pfe-cta priority="primary"><a href="http://www.google.com">Search</a></pfe-cta>
         </form>
         <pfe-navigation-main role="navigation" aria-label="Main">
-          <ul>
-            <!-- <li>
-              <pfe-navigation-item>
-                <h3 slot="trigger">
-                  <a href="#">Menu item</a>
-                </h3>
-                <div slot="tray" hidden>
-                  <div class="pfe-navigation-item__tray--container">
-                    <div class="pfe-navigation-grid">
-                      <div class="pfe-navigation--column">
-                        <div class="pfe-link-list">
-                          <h4 class="pfe-link-list--header">List header</h4>
-                          <ul class="pfe-link-list--group">
-                            <li class="pfe-link-list--group-item"><a href="#">Item 1</a></li>
-                            <li class="pfe-link-list--group-item"><a href="#">Item 2</a></li>
-                            
-                          </ul>
-                        </div>
-                      </div>
-                      <div class="pfe-navigation--column">
-                        <div class="pfe-link-list">
-                          <h4 class="pfe-link-list--header">List header 2</h4>
-                          <ul class="pfe-link-list--group">
-                            <li class="pfe-link-list--group-item"><a href="#">Item 1</a></li>
-                            <li class="pfe-link-list--group-item"><a href="#">Item 2</a></li>
-                            
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="pfe-navigation--footer">
-                      <div class="pfe-navigation--column">
-                        <pfe-cta pfe-priority="primary"><a href="#">View all products</a></pfe-cta>
-                      </div>
-                      <div class="pfe-navigation--column">
-                        <pfe-cta><a href="#">Explore our portfolio</a></pfe-cta>
-                      </div>
-                      <div class="pfe-navigation--column">
-                        <pfe-cta><a href="#">Buy products online</a></pfe-cta>
-                      </div>
-                      <div class="pfe-navigation--column">
-                        <pfe-cta><a href="#">Subscription model</a></pfe-cta>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </pfe-navigation-item>
-            </li> -->
+          <ul>            
             <li>
               <pfe-navigation-item>
                 <h3 slot="trigger">
@@ -263,10 +219,10 @@
           <!-- Start Col -->
           <div class="col-lg-4 col-md-6 col-xs-12">
             <div class="services-item text-center">
-              <div class="icon kogito-icon">
-                <i class="lni-cog"></i>
+              <div class="icon1 kogito-icon">
+                <img src="/images/kogito_logo_text.png" alt="" style="width: 300px;">                
               </div>
-              <h4>Kogito</h4>
+              <!-- <h4>Kogito</h4> -->
               <p>Share processes and data secure lona need to know basis Our team assured your web site is always safe.</p>
             </div>
           </div>
@@ -274,10 +230,11 @@
           <!-- Start Col -->
           <div class="col-lg-4 col-md-6 col-xs-12">
             <div class="services-item text-center">
-              <div class="icon drools-icon">
-                <i class="lni-brush"></i>
+              <div class="icon1 drools-icon">
+                <img src="/images/drools_logo_text.png" alt="">
+                <!-- <i class="lni-brush"></i> -->
               </div>
-              <h4>Drools</h4>
+              <!-- <h4>Drools</h4> -->
               <p>Share processes and data secure lona need to know basis Our team assured your web site is always safe.</p>
             </div>
           </div>
@@ -285,19 +242,21 @@
           <!-- Start Col -->
           <div class="col-lg-4 col-md-6 col-xs-12">
             <div class="services-item text-center">
-              <div class="icon jbpm-icon">
-                <i class="lni-heart"></i>
+              <div class="icon1 jbpm-icon">
+                <img src="/images/jbpm_logo_text.png" alt="">
+                <!-- <i class="lni-heart"></i> -->
               </div>
-              <h4>jBPM</h4>
+              <!-- <h4>jBPM</h4> -->
               <p>Share processes and data secure lona need to know basis Our team assured your web site is always safe.</p>
             </div>
           </div>
           <div class="col-lg-4 col-md-6 col-xs-12">
             <div class="services-item text-center">
-              <div class="icon optaplanner-icon">
-                <i class="lni-heart"></i>
+              <div class="icon1 optaplanner-icon">
+                <img src="/images/optaplanner_logo_text.png" alt="">
+                <!-- <i class="lni-heart"></i> -->
               </div>
-              <h4>OptaPlanner</h4>
+              <!-- <h4>OptaPlanner</h4> -->
               <p>Share processes and data secure lona need to know basis Our team assured your web site is always safe.</p>
             </div>
           </div>
@@ -308,9 +267,81 @@
     </section>
     <!-- Services Section End -->
 
+    <div>
+      <h1>Join Our Community</h1>
+    </div>
+    
+     <!-- Start Row -->
+     <div class="row featured-bg">
+      <!-- Start Col -->
+       <div class="col-lg-6 col-md-6 col-xs-12 p-0">
+          <!-- Start Fetatures -->
+         <div class="feature-item featured-border1">
+            <div class="feature-icon float-left">
+              <i class="lni-coffee-cup"></i>
+            </div>
+            <div class="feature-info float-left">
+              <h4>Github</h4>
+              <p>KIE projects live on <a href="https://github.com/kiegroup">github.com/kiegroup</a></p>
+            </div>
+         </div>
+         <!-- End Fetatures -->
+       </div>
+        <!-- End Col -->
+       
+      <!-- Start Col -->
+       <div class="col-lg-6 col-md-6 col-xs-12 p-0">
+          <!-- Start Fetatures -->
+         <div class="feature-item featured-border2">
+            <div class="feature-icon float-left">
+              <i class="lni-briefcase"></i>
+            </div>
+            <div class="feature-info float-left">
+              <h4>Zulip</h4>
+              <p>Got questions? Want to discuss an issue in real-time? Then join us on Zulip.
+
+                Most of our project discussions take place there, usually during European and American daytime. Click <a href="https://kie.zulipchat.com/login/" class="link">here</a> to join!</p>
+            </div>
+         </div>
+         <!-- End Fetatures -->
+       </div>
+        <!-- End Col -->
+       
+      <!-- Start Col -->
+       <div class="col-lg-6 col-md-6 col-xs-12 p-0">
+          <!-- Start Fetatures -->
+         <div class="feature-item featured-border1">
+            <div class="feature-icon float-left">
+              <i class="lni-invention"></i>
+            </div>
+            <div class="feature-info float-left">
+              <h4>Youtube</h4>
+              <p>Visit our <a href="https://www.youtube.com/channel/UCUjeymTM-TrwHs36388VRbw/featured" class="link">KIE Group YouTube channel</a> for demos and talks..</p>
+            </div>
+         </div>
+         <!-- End Fetatures -->
+       </div>
+        <!-- End Col -->
+       
+      <!-- Start Col -->
+       <div class="col-lg-6 col-md-6 col-xs-12 p-0">
+          <!-- Start Fetatures -->
+         <div class="feature-item featured-border2">
+            <div class="feature-icon float-left">
+             <i class="lni-layers"></i>
+            </div>
+            <div class="feature-info float-left">
+              <h4>Twitter</h4>
+              <p>Follow the latest news in Kogito, Drools, jBPM, and OptaPlanner. <a href="https://twitter.com/KieCommunity" class="link">Kie Community</a> </p>
+            </div>
+         </div>
+         <!-- End Fetatures -->
+       </div>
+        <!-- End Col -->
+     </div>
+     <!-- End Row -->
 
     
-      
     <footer>
       <div class="row">
         <div class="column">

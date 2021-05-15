@@ -27,7 +27,48 @@
     line-height: 26px;
     margin-bottom: 0; } */
   
-   .kogito-icon {
-       background-color: yellow;
-       background: url(/images/kogito_logo_text.png) no-repeat;
-   }
+  .icon1 {
+    padding: 40px;
+    margin: 10px;
+  }
+
+  #features .featured-bg {
+    background: #fff;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  /* margin-right: -15px;
+  margin-left: -15px; */
+} 
+
+.banner {
+  height: 70px;
+  width: 100%;
+  /* border: 2px solid red; */
+  /* align-items: center; */
+  justify-content: center;
+  display: flex;
+  background-image: url(/pngtree-abstract-paper-hexagon-white-background-light-and-shadow-vector-image_388925.jpg);
+  /* background-image: url(/pngtree-low-poly-gradient-texture-background-crystallize-image_335277.jpg) no-repeat; */
+  /* background-image: url(/1456176dd0f0db4.jpeg); */
+}
+
+.sticky {
+  /* position: fixed; */
+  z-index: 99;
+}
+
+.banner {
+  position: unset;
+}
+
+.featured-bg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px;
+}
