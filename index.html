@@ -38,12 +38,13 @@
         import "https://unpkg.com/@patternfly/pfe-tabs/dist/pfe-tabs.min.js";
         import "https://unpkg.com/@patternfly/pfe-navigation/dist/pfe-navigation.min.js"
     </script>
+    
 </head>
 <div class="banner">
   <h3>What is trending!! Latest News on events</h3>
 </div>
 <body>
-    <pfe-navigation pfe-menu-label="Menu" pfe-theme="dark" class="sticky">        
+    <pfe-navigation pfe-menu-label="Menu" pfe-theme="dark" class="sticky" id="mystickynav">        
         <div slot="skip">
           <ul>
             <li><a href="#rh-main-content">Skip to content</a></li>
@@ -217,10 +218,10 @@
 
         <div class="row">
           <!-- Start Col -->
-          <div class="col-lg-4 col-md-6 col-xs-12">
+          <div class="col-lg-3 col-md-6 col-xs-12">
             <div class="services-item text-center">
               <div class="icon1 kogito-icon">
-                <img src="/images/kogito_logo_text.png" alt="" style="width: 300px;">                
+                <img src="/images/kogito_logo_text.png" alt="">                
               </div>
               <!-- <h4>Kogito</h4> -->
               <p>Share processes and data secure lona need to know basis Our team assured your web site is always safe.</p>
@@ -228,7 +229,7 @@
           </div>
           <!-- End Col -->
           <!-- Start Col -->
-          <div class="col-lg-4 col-md-6 col-xs-12">
+          <div class="col-lg-3 col-md-6 col-xs-12">
             <div class="services-item text-center">
               <div class="icon1 drools-icon">
                 <img src="/images/drools_logo_text.png" alt="">
@@ -240,7 +241,7 @@
           </div>
           <!-- End Col -->
           <!-- Start Col -->
-          <div class="col-lg-4 col-md-6 col-xs-12">
+          <div class="col-lg-3 col-md-6 col-xs-12">
             <div class="services-item text-center">
               <div class="icon1 jbpm-icon">
                 <img src="/images/jbpm_logo_text.png" alt="">
@@ -250,7 +251,7 @@
               <p>Share processes and data secure lona need to know basis Our team assured your web site is always safe.</p>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6 col-xs-12">
+          <div class="col-lg-3 col-md-6 col-xs-12">
             <div class="services-item text-center">
               <div class="icon1 optaplanner-icon">
                 <img src="/images/optaplanner_logo_text.png" alt="">
@@ -267,79 +268,103 @@
     </section>
     <!-- Services Section End -->
 
-    <div>
+    <!-- <div>
       <h1>Join Our Community</h1>
-    </div>
-    
-     <!-- Start Row -->
-     <div class="row featured-bg">
-      <!-- Start Col -->
-       <div class="col-lg-6 col-md-6 col-xs-12 p-0">
-          <!-- Start Fetatures -->
-         <div class="feature-item featured-border1">
-            <div class="feature-icon float-left">
-              <i class="lni-coffee-cup"></i>
-            </div>
-            <div class="feature-info float-left">
-              <h4>Github</h4>
-              <p>KIE projects live on <a href="https://github.com/kiegroup">github.com/kiegroup</a></p>
-            </div>
-         </div>
-         <!-- End Fetatures -->
-       </div>
-        <!-- End Col -->
-       
-      <!-- Start Col -->
-       <div class="col-lg-6 col-md-6 col-xs-12 p-0">
-          <!-- Start Fetatures -->
-         <div class="feature-item featured-border2">
-            <div class="feature-icon float-left">
-              <i class="lni-briefcase"></i>
-            </div>
-            <div class="feature-info float-left">
-              <h4>Zulip</h4>
-              <p>Got questions? Want to discuss an issue in real-time? Then join us on Zulip.
+    </div> -->
 
-                Most of our project discussions take place there, usually during European and American daytime. Click <a href="https://kie.zulipchat.com/login/" class="link">here</a> to join!</p>
+    <section id="features" class="section">
+      <div class="container">
+      
+      <div class="row">
+      <div class="col-lg-12">
+      <div class="features-text section-header text-center">
+      <div>
+      <h2 class="section-title">Join Our Community</h2>
+      <div class="desc-text">
+      <p></p>
+      </div>
+      </div>
+      </div>
+      </div>
+      </div>
+      
+      
+      <div class="row featured-bg">
+      
+      <div class="col-lg-6 col-md-6 col-xs-12 p-0">
+      
+      <div class="feature-item featured-border1">
+      <div class="feature-icon float-left">
+      <i class="lni lni-coffee-cup"></i>
+      </div>
+      <div class="feature-info float-left">
+      <h4>Github</h4>
+      <div class="section-links">
+        <p>KIE projects live on <a href="https://github.com/kiegroup">github.com/kiegroup</a></p>
+      </div>     
             </div>
-         </div>
-         <!-- End Fetatures -->
-       </div>
-        <!-- End Col -->
-       
-      <!-- Start Col -->
-       <div class="col-lg-6 col-md-6 col-xs-12 p-0">
-          <!-- Start Fetatures -->
-         <div class="feature-item featured-border1">
-            <div class="feature-icon float-left">
-              <i class="lni-invention"></i>
-            </div>
-            <div class="feature-info float-left">
-              <h4>Youtube</h4>
-              <p>Visit our <a href="https://www.youtube.com/channel/UCUjeymTM-TrwHs36388VRbw/featured" class="link">KIE Group YouTube channel</a> for demos and talks..</p>
-            </div>
-         </div>
-         <!-- End Fetatures -->
-       </div>
-        <!-- End Col -->
-       
-      <!-- Start Col -->
-       <div class="col-lg-6 col-md-6 col-xs-12 p-0">
-          <!-- Start Fetatures -->
-         <div class="feature-item featured-border2">
-            <div class="feature-icon float-left">
-             <i class="lni-layers"></i>
-            </div>
-            <div class="feature-info float-left">
-              <h4>Twitter</h4>
-              <p>Follow the latest news in Kogito, Drools, jBPM, and OptaPlanner. <a href="https://twitter.com/KieCommunity" class="link">Kie Community</a> </p>
-            </div>
-         </div>
-         <!-- End Fetatures -->
-       </div>
-        <!-- End Col -->
-     </div>
-     <!-- End Row -->
+      </div>
+      
+      </div>
+      
+      
+      <div class="col-lg-6 col-md-6 col-xs-12 p-0">
+      
+      <div class="feature-item featured-border2">
+      <div class="feature-icon float-left">
+      <i class="lni lni-briefcase"></i>
+      </div>
+      <div class="feature-info float-left">
+        <h4>Zulip</h4>
+        <div class="section-links">
+          <p>Got questions? Want to discuss an issue in real-time? Then join us on Zulip.
+            Most of our project discussions take place there, usually during European and American daytime. Click <a href="https://kie.zulipchat.com/login/">here</a> to join!</p>
+        </div>
+        
+      </div>
+      </div>
+      
+      </div>
+      
+      
+      <div class="col-lg-6 col-md-6 col-xs-12 p-0">
+      
+      <div class="feature-item featured-border1">
+      <div class="feature-icon float-left">
+      <i class="lni lni-invention"></i>
+      </div>
+      <div class="feature-info float-left">
+        <h4>Youtube</h4>
+        <div class="section-links">
+          <p>Visit our <a href="https://www.youtube.com/channel/UCUjeymTM-TrwHs36388VRbw/featured">KIE Group YouTube channel</a> for demos and talks..</p>
+        </div>
+      </div>
+      </div>
+      
+      </div>
+      
+      
+      <div class="col-lg-6 col-md-6 col-xs-12 p-0">
+      
+      <div class="feature-item featured-border2">
+      <div class="feature-icon float-left">
+      <i class="lni lni-layers"></i>
+      </div>
+      <div class="feature-info float-left">
+        <h4>Twitter</h4>
+        <div class="section-links">
+          <p>Follow the latest news in Kogito, Drools, jBPM, and OptaPlanner. <a href="https://twitter.com/KieCommunity" class="link">Kie Community</a> </p>
+        </div>
+      </div>
+      </div>
+      
+      </div>         
+      
+      </div>
+      
+      </div>
+      </section> 
+     
 
     
     <footer>
@@ -353,6 +378,14 @@
           <a href="http://www.redhat.com/legal/privacy_statement.html">Terms and Conditions</a>
         </div>
       </div>
+      
+    </footer>
+
+    <div class="small-footer-section">
+      <div class="column">
+        <span>Development is sponsored by</span>
+        <a class="logo" href="https://www.redhat.com/"></a>
+      </div>
       <div class="row">
         <div class="column">
           <span>
@@ -360,42 +393,9 @@
           </span>
         </div>
       </div>
-    </footer>
+    </div>
 
-    <section class="rc-footer-traditional">
-      <div class="container rc-footer-traditional-container">
-        <section class="rc-footer-traditional-section">
-          <div class="rc-footer-traditional-logo">
-            <div class="row">
-              <a href="/en">
-                <img src="/profiles/rh/themes/redhatdotcom/img/logo.svg" class="screen" title="Red Hat">
-              </a>
-            </div>
-          </div>
-          <div id="legal" class="rc-footer-traditional-legal">
-            <div class="row">
-              <div class="copyright">Copyright ©2021 Red Hat, Inc.</div>
-              <div>
-                <ul class="menu">
-                  <li class="first leaf"><a href="/en/about/privacy-policy">Privacy statement</a></li>
-                  <li class="leaf"><a href="/en/about/terms-use">Terms of use</a></li>
-                  <li class="leaf"><a href="/en/about/all-policies-guidelines">All policies and guidelines</a></li>
-                  <li class="last leaf"><span id="teconsent" class="nolink" consent="0,1,2"
-                      aria-label="Open Cookie Preferences Modal" role="complementary">|
-                      <script src="https://consent.trustarc.com/asset/notice.js/v/v1.7-1745" async="async"
-                        crossorigin=""></script><a role="link" id="icon-id03533512555020777" tabindex="0" lang="en"
-                        aria-label="Cookie Preferences" style="cursor: pointer;">Cookie Preferences</a>
-                    </span></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="rc-footer-traditional-event-logo">
-            <div id="block-block-5" class="block block-block block-footer-promote">    
-            </div>
-          </div>
-        </section>
-      </div>
-    </section>
+    <!-- JS -->
+    <script src="sticky-header.js"></script>
 </body>
 </html>
