@@ -9,6 +9,9 @@
     </title>
     <link rel="stylesheet" href="https://unpkg.com/@patternfly/pfelement/dist/pfelement.min.css">
     <link rel="stylesheet" href="https://unpkg.com/@patternfly/pfe-styles/dist/pfe-layouts.min.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="section.css">
+    <link rel="stylesheet" href="main.css">  
     <link
         href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;700&family=Red+Hat+Text&display=swap"
         rel="stylesheet">
@@ -252,55 +255,61 @@
         </pfe-navigation-item> -->
       </pfe-navigation>
 
-      <main>
-        <pfe-band color="lightest">
-            <h2 slot="pfe-band--header">Card components</h2>
-            <div class="pfe-l-grid pfe-m-gutters pfe-m-all-4-col">
-                <pfe-card>
-                    <h3 slot="pfe-card--header">Card 1</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis laboriosam eum saepe eius tempora
-                        sequi eligendi repudiandae aspernatur beatae totam voluptatum facere unde, vitae inventore
-                        eveniet accusamus nulla recusandae aliquam.</p>
-                    <div slot="pfe-card--footer">
-                        <pfe-cta>
-                            <a href="https://patternflyelements.org">More about PatternFly Elements</a>
-                        </pfe-cta>
-                    </div>
-                </pfe-card>
-                <pfe-card>
-                    <h3 slot="pfe-card--header">Card 2</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque necessitatibus sapiente aliquam
-                        recusandae maxime consectetur magnam ipsa veniam expedita molestiae. Quis officia minima libero
-                        repellat laboriosam sit nemo porro laborum.</p>
-                    <div slot="pfe-card--footer">
-                        <pfe-cta>
-                            <a href="https://patternflyelements.org/get-started">Get started</a>
-                        </pfe-cta>
-                    </div>
-                </pfe-card>
-                <pfe-card>
-                    <h3 slot="pfe-card--header">Card 3</h3>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate iusto laboriosam molestias,
-                        quidem ab voluptates nihil earum sed! Esse repellat quo ut numquam mollitia quis saepe
-                        aspernatur fuga error in!</p>
-                    <div slot="pfe-card--footer">
-                        <pfe-cta>
-                            <a href="https://developer.mozilla.org/en-US/docs/Web/Web_Components">About web
-                                components</a>
-                        </pfe-cta>
-                    </div>
-                </pfe-card>              
+      <!-- Services Section Start -->
+    <section id="services" class="section">
+      <div class="container">
+
+        <div class="row">
+          <!-- Start Col -->
+          <div class="col-lg-4 col-md-6 col-xs-12">
+            <div class="services-item text-center">
+              <div class="icon kogito-icon">
+                <i class="lni-cog"></i>
+              </div>
+              <h4>Kogito</h4>
+              <p>Share processes and data secure lona need to know basis Our team assured your web site is always safe.</p>
             </div>
-            <br>
-            <div slot="pfe-band--footer" class="pfe-l--text-align--center">
-                <pfe-cta>
-                    <a href="https://patternflyelements.org/components">View all of the components</a>
-                </pfe-cta>
+          </div>
+          <!-- End Col -->
+          <!-- Start Col -->
+          <div class="col-lg-4 col-md-6 col-xs-12">
+            <div class="services-item text-center">
+              <div class="icon drools-icon">
+                <i class="lni-brush"></i>
+              </div>
+              <h4>Drools</h4>
+              <p>Share processes and data secure lona need to know basis Our team assured your web site is always safe.</p>
             </div>
-        </pfe-band>
+          </div>
+          <!-- End Col -->
+          <!-- Start Col -->
+          <div class="col-lg-4 col-md-6 col-xs-12">
+            <div class="services-item text-center">
+              <div class="icon jbpm-icon">
+                <i class="lni-heart"></i>
+              </div>
+              <h4>jBPM</h4>
+              <p>Share processes and data secure lona need to know basis Our team assured your web site is always safe.</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-xs-12">
+            <div class="services-item text-center">
+              <div class="icon optaplanner-icon">
+                <i class="lni-heart"></i>
+              </div>
+              <h4>OptaPlanner</h4>
+              <p>Share processes and data secure lona need to know basis Our team assured your web site is always safe.</p>
+            </div>
+          </div>
+          <!-- End Col -->
+
+        </div>
+      </div>
+    </section>
+    <!-- Services Section End -->
 
 
-    </main>
+    
       
     <footer>
       <div class="row">
@@ -321,5 +330,41 @@
         </div>
       </div>
     </footer>
+
+    <section class="rc-footer-traditional">
+      <div class="container rc-footer-traditional-container">
+        <section class="rc-footer-traditional-section">
+          <div class="rc-footer-traditional-logo">
+            <div class="row">
+              <a href="/en">
+                <img src="/profiles/rh/themes/redhatdotcom/img/logo.svg" class="screen" title="Red Hat">
+              </a>
+            </div>
+          </div>
+          <div id="legal" class="rc-footer-traditional-legal">
+            <div class="row">
+              <div class="copyright">Copyright ©2021 Red Hat, Inc.</div>
+              <div>
+                <ul class="menu">
+                  <li class="first leaf"><a href="/en/about/privacy-policy">Privacy statement</a></li>
+                  <li class="leaf"><a href="/en/about/terms-use">Terms of use</a></li>
+                  <li class="leaf"><a href="/en/about/all-policies-guidelines">All policies and guidelines</a></li>
+                  <li class="last leaf"><span id="teconsent" class="nolink" consent="0,1,2"
+                      aria-label="Open Cookie Preferences Modal" role="complementary">|
+                      <script src="https://consent.trustarc.com/asset/notice.js/v/v1.7-1745" async="async"
+                        crossorigin=""></script><a role="link" id="icon-id03533512555020777" tabindex="0" lang="en"
+                        aria-label="Cookie Preferences" style="cursor: pointer;">Cookie Preferences</a>
+                    </span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="rc-footer-traditional-event-logo">
+            <div id="block-block-5" class="block block-block block-footer-promote">    
+            </div>
+          </div>
+        </section>
+      </div>
+    </section>
 </body>
 </html>
