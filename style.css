@@ -1,4 +1,4 @@
-body {
+/* body {
   --pfe-reveal-duration: 0.1618s;
   --pfe-reveal-delay: 2s;
   -webkit-transition: opacity var(--pfe-reveal-duration) ease-in-out;
@@ -58,5 +58,9 @@ body[unresolved] {
     opacity: 1;
     visibility: visible;
   }
-}
+} */
 /*# sourceMappingURL=pfelement.min.css.map */
+
+:host {
+  --pfe-navigation--BackgroundColor: var(--pfe-theme--color--surface--darkest, lightgrey);
+}

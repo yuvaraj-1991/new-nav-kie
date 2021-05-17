@@ -12,12 +12,13 @@
     <link rel="stylesheet" href="bootstrap.min.css">
     <link rel="stylesheet" href="section.css">
     <link rel="stylesheet" href="main.css">  
+    <link rel="stylesheet" href="style.css">
     <link
         href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;700&family=Red+Hat+Text&display=swap"
         rel="stylesheet">
         <link rel="stylesheet" href="navstyle.css">
     <style>
-        html,
+        html,        
         body {
             margin: 0;
             font-family: "Red Hat Text";
@@ -28,6 +29,7 @@
         h3,
         h4 {
             font-family: "Red Hat Display";
+
         }
     </style>
     <script type="module">
@@ -36,15 +38,17 @@
         import "https://unpkg.com/@patternfly/pfe-cta/dist/pfe-cta.min.js";
         import "https://unpkg.com/@patternfly/pfe-accordion/dist/pfe-accordion.min.js";
         import "https://unpkg.com/@patternfly/pfe-tabs/dist/pfe-tabs.min.js";
-        import "https://unpkg.com/@patternfly/pfe-navigation/dist/pfe-navigation.min.js"
+        import "https://unpkg.com/@patternfly/pfe-navigation/dist/pfe-navigation.min.js"        
     </script>
+    <script src="test.js"></script>
+    <!-- <script src="nav-min.js"></script> -->
     
 </head>
 <div class="banner">
   <h3>What is trending!! Latest News on events</h3>
 </div>
 <body>
-    <pfe-navigation pfe-menu-label="Menu" pfe-theme="dark" class="sticky" id="mystickynav">        
+    <pfe-navigation color="lightest" pfe-menu-label="Menu" color="accent" class="sticky" id="mystickynav">        
         <div slot="skip">
           <ul>
             <li><a href="#rh-main-content">Skip to content</a></li>
